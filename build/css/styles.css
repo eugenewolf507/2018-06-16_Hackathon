@@ -427,7 +427,7 @@ template {
 }
 
 .wrapper {
-  min-width: 1200px;
+  width: 70.6666%;
   margin: 0 auto;
 }
 
@@ -436,16 +436,21 @@ template {
 /* Components */
 
 @media (max-width: 1200px) {
+  body {
+    padding: 0 10px;
+  }
+
   .wrapper {
     width: 100%;
-    padding: 0 10px;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 0 5px;
+  }
+
   .wrapper {
     min-width: 320px;
-    width: 100%;
-    padding: 0 5px;
   }
 }
