@@ -6,12 +6,13 @@
 
 /* Base */
 @import 'base/normalize';
+@import 'base/fonts';
 @import 'base/base';
 
 /* Layout */
 @import 'layout/header';
-@import 'layout/main';
-@import 'layout/footer';
+@import 'layout/article';
+@import 'layout/section';
 
 /* Components */
 @import 'components/dmytro';
