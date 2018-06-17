@@ -85,6 +85,7 @@
 
     &__img {
         @extend %image;
+        margin: 0 auto;
     }
 }
 
