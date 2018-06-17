@@ -48,15 +48,15 @@
 }
 
 .usages__item--first:after {
-  background-image: url(../../img/vector-1.png);
+  background-image: url(../img/vector-1.png);
 }
 
 .usages__item--second:after {
-  background-image: url(../../img/vector-1.png);
+  background-image: url(../img/vector-1.png);
 }
 
 .usages__item--third:after {
-  background-image: url(../../img/vector-2.png);
+  background-image: url(../img/vector-2.png);
   left: 50%;
   width: 7px;
   height: 32px;
@@ -64,7 +64,7 @@
 }
 
 .usages__item--sixth:after, .usages__item--fifth:after {
-  background-image: url(../../img/vector-1.png);
+  background-image: url(../img/vector-1.png);
   width: 88px;
   height: 7px;
   transform: rotateY(180deg);
@@ -72,7 +72,7 @@
 }
 
 .usages__item--fourth:after {
-  background-image: url(../../img/vector-3.png);
+  background-image: url(../img/vector-3.png);
   width: 204px;
   height: 83px;
   left: 50%;
@@ -98,7 +98,7 @@
   }
 
   .usages__item--second:after {
-    background-image: url(../../img/vector-2.png);
+    background-image: url(../img/vector-2.png);
     transform: rotateY(180deg);
     width: 7px;
     height: 32px;
@@ -107,7 +107,7 @@
   }
 
   .usages__item--fourth:after {
-    background-image: url(../../img/vector-1.png);
+    background-image: url(../img/vector-1.png);
     transform: rotateY(180deg);
     width: 204px;
     height: 83px;
@@ -121,7 +121,7 @@
   }
 
   .usages__item--sixth:after {
-    background-image: url(../../img/vector-2.png);
+    background-image: url(../img/vector-2.png);
     width: 204px;
     height: 83px;
     top: 104%;
@@ -140,7 +140,7 @@
   }
 
   .usages__item::after {
-    background-image: url(../../img/vector-2.png);
+    background-image: url(../img/vector-2.png);
     width: 7px;
     height: 32px;
     top: 104%;

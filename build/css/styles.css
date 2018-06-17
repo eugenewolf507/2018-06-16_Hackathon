@@ -904,15 +904,15 @@ body {
 }
 
 .usages__item--first:after {
-  background-image: url(../../img/vector-1.png);
+  background-image: url(../img/vector-1.png);
 }
 
 .usages__item--second:after {
-  background-image: url(../../img/vector-1.png);
+  background-image: url(../img/vector-1.png);
 }
 
 .usages__item--third:after {
-  background-image: url(../../img/vector-2.png);
+  background-image: url(../img/vector-2.png);
   left: 50%;
   width: 7px;
   height: 32px;
@@ -921,7 +921,7 @@ body {
 
 .usages__item--sixth:after,
 .usages__item--fifth:after {
-  background-image: url(../../img/vector-1.png);
+  background-image: url(../img/vector-1.png);
   width: 88px;
   height: 7px;
   -webkit-transform: rotateY(180deg);
@@ -930,7 +930,7 @@ body {
 }
 
 .usages__item--fourth:after {
-  background-image: url(../../img/vector-3.png);
+  background-image: url(../img/vector-3.png);
   width: 204px;
   height: 83px;
   left: 50%;
@@ -1101,7 +1101,7 @@ body {
   }
 
   .usages__item--second:after {
-    background-image: url(../../img/vector-2.png);
+    background-image: url(../img/vector-2.png);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     width: 7px;
@@ -1111,7 +1111,7 @@ body {
   }
 
   .usages__item--fourth:after {
-    background-image: url(../../img/vector-1.png);
+    background-image: url(../img/vector-1.png);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     width: 204px;
@@ -1127,7 +1127,7 @@ body {
   }
 
   .usages__item--sixth:after {
-    background-image: url(../../img/vector-2.png);
+    background-image: url(../img/vector-2.png);
     width: 204px;
     height: 83px;
     top: 104%;
@@ -1146,7 +1146,7 @@ body {
   }
 
   .usages__item::after {
-    background-image: url(../../img/vector-2.png);
+    background-image: url(../img/vector-2.png);
     width: 7px;
     height: 32px;
     top: 104%;
