@@ -16,7 +16,8 @@ body{
   //width: 70.6666%;
   max-width: 848px;
   margin: 0 auto;
-
+  padding-top: 32px;
+  
   @include tablet{
     width: 100%;
   }

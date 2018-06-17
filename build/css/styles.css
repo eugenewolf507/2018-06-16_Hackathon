@@ -457,6 +457,7 @@ template {
   position: relative;
   max-width: 848px;
   margin: 0 auto;
+  padding-top: 32px;
 }
 
 /*
@@ -527,7 +528,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 33px 0 85px;
+  margin: 0 0 85px 0;
 }
 
 .header__contacts {
@@ -638,7 +639,7 @@ template {
   color: #231f20;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   body {
     padding: 0 10px;
   }
@@ -648,7 +649,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     padding: 0 5px;
   }
