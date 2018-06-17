@@ -130,6 +130,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 108px;
   @include mobile{
     flex-direction: column;
   }
@@ -183,9 +184,9 @@
 }
 
 .course-description__description-text{
-  font-family: $main-font;
-  font-size: 17px;
-  font-weight: 400;
+  //font-family: $main-font;
+  //font-size: 17px;
+  //font-weight: 400;
   line-height: 25px;
-  color: $section-text-color;
+  //color: $section-text-color;
 }

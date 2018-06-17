@@ -454,6 +454,13 @@ template {
   src: url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
+body {
+  font-family: Acrom, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #231f20;
+}
+
 .wrapper {
   position: relative;
   max-width: 848px;
@@ -608,6 +615,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 108px;
 }
 
 .course-description__image-container {
@@ -637,11 +645,7 @@ template {
 }
 
 .course-description__description-text {
-  font-family: Acrom, sans-serif;
-  font-size: 17px;
-  font-weight: 400;
   line-height: 25px;
-  color: #231f20;
 }
 
 @media (max-width: 1199px) {

@@ -1,5 +1,10 @@
 body{
 
+  font-family: $main-font;
+  font-size: $text-font-size;
+  font-weight: 400;
+  color: $section-text-color;
+
   @include tablet{
     padding: 0 10px;
   }
@@ -17,7 +22,7 @@ body{
   max-width: 848px;
   margin: 0 auto;
   padding-top: 32px;
-  
+
   @include tablet{
     width: 100%;
   }
