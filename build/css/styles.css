@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Utils */
 
 .visually-hidden:not(:focus):not(:active),
@@ -16,7 +18,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.course-title {
+.course-title,
+.article-title {
   font-family: Acrom, sans-serif;
   font-size: 58px;
   font-weight: 900;
@@ -35,7 +38,9 @@ input[type="radio"].visually-hidden {
 }
 
 .course-title--inverted,
-.course-after__title--highlighted {
+.course-after__title--highlighted,
+.article-title--invert-color,
+.program-item__pretitle::before {
   color: #ffffff;
   background-color: #000000;
 }
@@ -734,7 +739,7 @@ body {
 .course-require__list {
   display: flex;
   flex-wrap: wrap;
-  counter-reset: count-item  headline;
+  counter-reset: count-item  headline;
 }
 
 .course-require__item {
@@ -766,6 +771,87 @@ body {
   top: 22px;
   left: -45px;
   line-height: 16px;
+}
+
+.program {
+  font-family: Acrom, sans-serif;
+}
+
+.program__list {
+  display: flex;
+  flex-wrap: wrap;
+  counter-reset: count-box;
+  padding-bottom: 81px;
+}
+
+.article-title {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.program-item {
+  padding-right: 2%;
+  flex-basis: 32%;
+  display: flex;
+  counter-increment: count-box;
+}
+
+.program-item:nth-of-type(3n) {
+  padding-right: 0;
+}
+
+.program-item__number {
+  font-weight: 900;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-item__number::before {
+  position: absolute;
+  left: -15px;
+  content: "0" counter(count-box) ".";
+  font-size: 38px;
+}
+
+.program-item__number::after {
+  position: absolute;
+  left: 38px;
+  top: 50px;
+  width: 8px;
+  height: 8px;
+  background-color: #ef7330;
+  content: "";
+}
+
+.program-item__inner {
+  padding-left: 26%;
+  padding-bottom: 1.6875rem;
+}
+
+.program-item__pretitle {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.program-item__pretitle::before {
+  content: "блок " counter(count-box) ".";
+}
+
+.program-item__title {
+  margin: 0;
+  padding-top: 0.125rem;
+  padding-bottom: 0.4375rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.25rem;
+}
+
+.program-item__text {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @media (max-width: 1199px) {
@@ -809,6 +895,20 @@ body {
     transform: rotate(0);
     top: 6px;
     left: -55px;
+  }
+
+  .program-item {
+    flex-basis: 48%;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 1199px) {
+  .program-item:nth-of-type(even) {
+    padding-right: 0;
+  }
+
+  .program-item:nth-of-type(3n) {
+    padding-right: 2%;
   }
 }
 
@@ -891,5 +991,10 @@ body {
   .course-require__item {
     font-size: 0.875rem;
     margin-bottom: 20px;
+  }
+
+  .program-item {
+    flex-basis: 100%;
+    padding-right: 0;
   }
 }
