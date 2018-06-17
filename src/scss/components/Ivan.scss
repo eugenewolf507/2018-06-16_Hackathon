@@ -1,6 +1,10 @@
 .section-titles{
   @extend %section-title;
   margin-bottom: 35px;
+
+  @include mobile{
+    text-align: center;
+  }
 }
 
 .usages__container {

@@ -5,7 +5,7 @@
   font-family: 'Acrom';
   font-weight: 900;
   font-size: 182px;
-  line-height: 0.8;
+  width: 180px;
   color: #f2f2f2;
   text-transform: uppercase;
   writing-mode: vertical-rl;
@@ -89,6 +89,10 @@
 .course-title{
   @extend %article-title;
   margin-bottom: 58px;
+  
+  @include mobile{
+    text-align: center;
+  }
 }
 
 .course-title--inverted{
@@ -110,6 +114,10 @@
   line-height: 27px;
   color: $title-dark-color;
 
+  @include mobile{
+    padding-left: 60px;
+  }
+
   &::before{
     content: '';
     position: absolute;
@@ -120,6 +128,10 @@
     background-color: $title-dark-color;
     width: 56px;
     height: 8px;
+
+    @include mobile{
+      width: 40px;
+    }
   }
 
   &:not(:last-child){

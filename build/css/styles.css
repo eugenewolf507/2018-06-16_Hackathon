@@ -484,35 +484,6 @@ body {
   padding-top: 32px;
 }
 
-/*
-.article-title{
-  font-family: $main-font;
-  font-size: $title-h2-font-size;
-  font-weight: 900;
-  line-height: 68px;
-  color: $title-dark-color;
-}
-
-.section-title{
-  font-family: $main-font;
-  font-size: $title-h3-font-size;
-  font-weight: 900;
-  line-height: 50px;
-  color: $title-dark-color;
-}
-
-.inverted-colors{
-  color: $title-light-color;
-  background-color: $title-dark-color;
-}
-
-.image{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-*/
-
 /* Layout */
 
 /* Components */
@@ -524,7 +495,7 @@ body {
   font-family: 'Acrom';
   font-weight: 900;
   font-size: 182px;
-  line-height: 0.8;
+  width: 180px;
   color: #f2f2f2;
   text-transform: uppercase;
   -webkit-writing-mode: vertical-rl;
@@ -740,7 +711,7 @@ body {
 .course-require__list {
   display: flex;
   flex-wrap: wrap;
-  counter-reset: count-item  headline;
+  counter-reset: count-item headline;
 }
 
 .course-require__item {
@@ -786,7 +757,6 @@ body {
 }
 
 .article-title {
-  display: inline-block;
   margin-bottom: 60px;
 }
 
@@ -996,12 +966,26 @@ body {
 }
 
 @media (max-width: 767px) {
+  .course-title,
+  .article-title {
+    font-size: 46.4px;
+    line-height: 56px;
+  }
+
+  .course-description__description-title,
+  .course-after__title,
+  .course-require__title,
+  .section-titles {
+    font-size: 30.4px;
+    line-height: 40px;
+  }
+
   body {
     padding: 0 5px;
   }
 
   .wrapper {
-    min-width: 320px;
+    min-width: 290px;
   }
 
   .header {
@@ -1011,6 +995,18 @@ body {
 
   .header__logo {
     margin-bottom: 15px;
+  }
+
+  .course-title {
+    text-align: center;
+  }
+
+  .course-keypoints__item {
+    padding-left: 60px;
+  }
+
+  .course-keypoints__item::before {
+    width: 40px;
   }
 
   .course-description {
@@ -1045,6 +1041,7 @@ body {
 
   .course-after__title {
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .course-after__list {
@@ -1060,7 +1057,8 @@ body {
   }
 
   .course-require__title {
-    margin: 10px 0 25px;
+    margin: 10px auto 25px;
+    text-align: center;
   }
 
   .course-require__content {
@@ -1076,9 +1074,17 @@ body {
     margin-bottom: 20px;
   }
 
+  .article-title {
+    text-align: center;
+  }
+
   .program-item {
     flex-basis: 100%;
     padding-right: 0;
+  }
+
+  .section-titles {
+    text-align: center;
   }
 }
 
