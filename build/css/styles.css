@@ -700,6 +700,10 @@ body {
   width: 50%;
 }
 
+.course-after__img {
+  margin: 0 auto;
+}
+
 .course-require {
   display: flex;
   flex-direction: column;
