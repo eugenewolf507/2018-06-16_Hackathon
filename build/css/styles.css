@@ -454,6 +454,11 @@ template {
   src: url("../fonts/roboto-v18-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin-regular.woff") format("woff");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Acrom, sans-serif;
   font-size: 17px;
@@ -500,11 +505,6 @@ body {
 /* Layout */
 
 /* Components */
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .bg-text {
   position: absolute;
