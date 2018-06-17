@@ -16,6 +16,33 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.course-title {
+  font-family: Acrom, sans-serif;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 68px;
+  color: #000000;
+}
+
+.course-description__description-title {
+  font-family: Acrom, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #000000;
+}
+
+.course-title--inverted {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.course-description__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Base */
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -427,13 +454,189 @@ template {
 }
 
 .wrapper {
-  width: 70.6666%;
+  position: relative;
+  max-width: 848px;
   margin: 0 auto;
 }
+
+/*
+.article-title{
+  font-family: $main-font;
+  font-size: $title-h2-font-size;
+  font-weight: 900;
+  line-height: 68px;
+  color: $title-dark-color;
+}
+
+.section-title{
+  font-family: $main-font;
+  font-size: $title-h3-font-size;
+  font-weight: 900;
+  line-height: 50px;
+  color: $title-dark-color;
+}
+
+.inverted-colors{
+  color: $title-light-color;
+  background-color: $title-dark-color;
+}
+
+.image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+*/
 
 /* Layout */
 
 /* Components */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-text {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acrom';
+  font-weight: 900;
+  font-size: 182px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  z-index: -1;
+}
+
+.bg-text:nth-child(1) {
+  top: 586px;
+  right: 206px;
+}
+
+.bg-text:nth-child(2) {
+  top: 1910px;
+  right: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 33px 0 85px;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  font-family: Acrom, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.header__email {
+  margin-right: 25px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.header__email::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/envelope.svg);
+  width: 17px;
+  height: 17px;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+}
+
+.header__phone::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/phone.svg);
+  width: 12px;
+  height: 12px;
+}
+
+.course-title {
+  margin-bottom: 60px;
+}
+
+.course-keypoints {
+  width: 50%;
+  min-width: 300px;
+  margin-bottom: 58px;
+}
+
+.course-keypoints__item {
+  padding-left: 100px;
+  position: relative;
+  font-family: Acrom, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #000000;
+}
+
+.course-keypoints__item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  background-color: #000000;
+  width: 56px;
+  height: 8px;
+}
+
+.course-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-description__image-container {
+  margin-right: 4%;
+  flex-basis: 48%;
+}
+
+.course-description__description-container {
+  flex-basis: 48%;
+}
+
+.course-description__description-title {
+  margin-bottom: 46px;
+  position: relative;
+  padding-top: 38px;
+}
+
+.course-description__description-title::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  background-color: #000000;
+  width: 16px;
+  height: 16px;
+}
+
+.course-description__description-text {
+  font-family: Acrom, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #231f20;
+}
 
 @media (max-width: 1200px) {
   body {
@@ -452,5 +655,26 @@ template {
 
   .wrapper {
     min-width: 320px;
+  }
+
+  .course-description {
+    flex-direction: column;
+  }
+
+  .course-description__image-container {
+    margin: 0 auto;
+  }
+
+  .course-description__description-container {
+    text-align: center;
+  }
+
+  .course-description__description-title::before {
+    display: none;
+  }
+
+  .course-description__description-title {
+    padding-top: 18px;
+    margin-bottom: 20px;
   }
 }
