@@ -5,6 +5,7 @@
   font-family: 'Acrom';
   font-weight: 900;
   font-size: 182px;
+  line-height: 0.8;
   color: #f2f2f2;
   text-transform: uppercase;
   writing-mode: vertical-rl;
@@ -12,13 +13,14 @@
   z-index: -1;
 
   &:nth-child(1){
-    top: 586px;
-    right: 206px;
+    top: 576px;
+    right: 205px;
   }
 
   &:nth-child(2){
-    top: 1910px;
+    top: 1895px;
     right: 0px;
+    letter-spacing: -0.08em;
   }
 }
 
@@ -30,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 0 0 85px 0;
+  margin: 0 0 83px 0;
 
   @include mobile{
     flex-direction: column;
@@ -56,7 +58,7 @@
 }
 
 .header__email{
-  margin-right: 25px;
+  margin-right: 15px;
   line-height: 17px;
   display: flex;
   align-items: center;
@@ -66,7 +68,8 @@
     display: inline-block;
     background-image: url(../img/envelope.svg);
     width: 17px;
-    height: 17px;
+    height: 15px;
+    margin-right: 4px;
   }
 }
 
@@ -85,7 +88,7 @@
 
 .course-title{
   @extend %article-title;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .course-title--inverted{
@@ -110,14 +113,17 @@
   &::before{
     content: '';
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 6px;
+    left: 0px;
 
     display: inline-block;
     background-color: $title-dark-color;
     width: 56px;
     height: 8px;
+  }
 
+  &:not(:last-child){
+    margin-bottom: 22px;
   }
 }
 
@@ -125,7 +131,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 108px;
+  margin-bottom: 100px;
   @include mobile{
     flex-direction: column;
   }
@@ -133,8 +139,8 @@
 
 
 .course-description__image-container{
-  margin-right: 4%;
-  flex-basis: 48%;
+  margin-right: 2%;
+  flex-basis: 49%;
   @include mobile{
     margin: 0 auto;
   }
@@ -146,7 +152,7 @@
 
 .course-description__description-container
 {
-  flex-basis: 48%;
+  flex-basis: 49%;
   @include mobile{
     text-align: center;
   }
@@ -154,9 +160,9 @@
 
 .course-description__description-title{
   @extend %section-title;
-  margin-bottom: 46px;
+  margin-bottom: 36px;
   position: relative;
-  padding-top: 38px;
+  padding-top: 32px;
 
   &::before{
     content: '';
