@@ -825,12 +825,12 @@ body {
   font-weight: 400;
 }
 
-.usages {
-  margin-bottom: 105px;
-}
-
 .section-titles {
   margin-bottom: 30px;
+}
+
+.usages {
+  margin-bottom: 105px;
 }
 
 .usages__list {

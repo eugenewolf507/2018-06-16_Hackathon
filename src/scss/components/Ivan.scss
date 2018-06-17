@@ -1,84 +1,84 @@
-.usages {
-  margin-bottom: 105px;
-}
-
 .section-titles {
   @extend %section-title;
   margin-bottom: 30px;
 }
 
-.usages__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+.usages {
+  margin-bottom: 105px;
 
-.usages__item {
-  font-size: $text-font-size;
-  font-family: $section-font;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 216px;
-  height: 80px;
-  box-shadow: -5px 6px 17px 4px rgba(0, 0, 0, 0.11);
-  margin-right: 100px;
-  margin-bottom: 48px;
-  padding: 5px;
-  text-align: center;
-  border-left: 4px solid #ff5600;
-  position: relative;
-
-  &:nth-child(3n) {
-    margin-right: 0px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  &:last-child {
-    margin-right: 0px;
-    margin-bottom: 0px;
+  &__item {
+    font-size: $text-font-size;
+    font-family: $section-font;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    height: 80px;
+    box-shadow: -5px 6px 17px 4px rgba(0, 0, 0, 0.11);
+    margin-right: 100px;
+    margin-bottom: 48px;
+    padding: 5px;
+    text-align: center;
+    border-left: 4px solid #ff5600;
+    position: relative;
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+
+    &:after {
+      content: "";
+      width: 88px;
+      height: 7px;
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 102%;
+    }
+
+    &--first:after,
+    &--second:after {
+      background-image: url(../img/vector-1.png);
+    }
+
+    &--third:after {
+      background-image: url(../img/vector-2.png);
+      left: 50%;
+      width: 7px;
+      height: 32px;
+      top: 104%;
+    }
+
+    &--fourth:after {
+      background-image: url(../img/vector-3.png);
+      width: 204px;
+      height: 83px;
+      left: 50%;
+      top: 104%;
+    }
+
+    &--fifth:after,
+    &--sixth:after {
+      background-image: url(../img/vector-1.png);
+      width: 88px;
+      height: 7px;
+      transform: rotateY(180deg);
+      left: -45%;
+      top: 50%;
+    }
   }
-
-  &:after {
-    content: "";
-    width: 88px;
-    height: 7px;
-    position: absolute;
-    background-repeat: no-repeat;
-    left: 102%;
-  }
-}
-
-.usages__item--first:after,
-.usages__item--second:after {
-  background-image: url(../img/vector-1.png);
-}
-
-.usages__item--third:after {
-  background-image: url(../img/vector-2.png);
-  left: 50%;
-  width: 7px;
-  height: 32px;
-  top: 104%;
-}
-
-.usages__item--fourth:after {
-  background-image: url(../img/vector-3.png);
-  width: 204px;
-  height: 83px;
-  left: 50%;
-  top: 104%;
-}
-
-.usages__item--fifth:after,
-.usages__item--sixth:after {
-  background-image: url(../img/vector-1.png);
-  width: 88px;
-  height: 7px;
-  transform: rotateY(180deg);
-  left: -45%;
-  top: 50%;
 }
 
 @media (min-width: 600px) and (max-width: 992px) {
@@ -97,37 +97,37 @@
     &:last-child {
       margin-right: 0px;
     }
-  }
 
-  .usages__item--second:after {
-    background-image: url(../img/vector-2.png);
-    transform: rotateY(180deg);
-    width: 7px;
-    height: 32px;
-    left: 50%;
-    top: 104%;
-  }
-
-  .usages__item--fourth:after {
-    background-image: url(../img/vector-1.png);
-    transform: rotateY(180deg);
-    width: 204px;
-    height: 83px;
-    left: -100%;
-    top: 50%;
-  }
-
-  .usages__item--fifth:after {
-    transform: rotateY(0deg);
-    left: 102%;
-  }
-
-  .usages__item--sixth:after {
-    background-image: url(../img/vector-2.png);
-    width: 204px;
-    height: 83px;
-    top: 104%;
-    left: -75%;
+    &--second:after {
+      background-image: url(../img/vector-2.png);
+      transform: rotateY(180deg);
+      width: 7px;
+      height: 32px;
+      left: 50%;
+      top: 104%;
+    }
+  
+    &--fourth:after {
+      background-image: url(../img/vector-1.png);
+      transform: rotateY(180deg);
+      width: 204px;
+      height: 83px;
+      left: -100%;
+      top: 50%;
+    }
+  
+    &--fifth:after {
+      transform: rotateY(0deg);
+      left: 102%;
+    }
+  
+    &--sixth:after {
+      background-image: url(../img/vector-2.png);
+      width: 204px;
+      height: 83px;
+      top: 104%;
+      left: -75%;
+    }
   }
 }
 
@@ -148,9 +148,9 @@
       top: 104%;
       left: 50%;
     }
-  }
 
-  .usages__item--seventh::after {
-    background-image: none;
+    &--seventh::after {
+      background-image: none;
+    }
   }
 }
