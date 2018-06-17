@@ -37,6 +37,7 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.header__logo,
 .course-description__image {
   display: block;
   max-width: 100%;
@@ -524,6 +525,10 @@ template {
   right: 0px;
 }
 
+.course {
+  margin-bottom: 140px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -656,6 +661,15 @@ template {
 
   .wrapper {
     min-width: 320px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-bottom: 15px;
   }
 
   .course-description {
