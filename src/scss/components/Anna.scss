@@ -1,0 +1,140 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+  }
+  
+  .courses-info {
+    margin: auto;
+    margin-bottom: calculateRem(55px);
+    max-width: 416px;
+    padding: 2.94rem 2.81rem 3.56rem;
+    box-sizing: border-box;
+    box-shadow: -3px 3px 42px -15px rgba(0, 0, 0, 0.75);
+  
+    @include mobile {
+      padding: 2.94rem 0.8rem 3.56rem;
+    }
+  
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-left: calculateRem(7px);
+    box-sizing: border-box;
+  
+    &:first-child {
+      @include mobile {
+        width: 60%;
+      }
+    }
+  
+    &:nth-child(2) {
+      @include mobile {
+        width: 40%;
+      }
+    }
+  }
+  
+  .item-wrapper {
+    margin-bottom: calculateRem(18px);
+  
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  
+    &--left {
+      text-align: right;
+      padding-right: 2px;
+    }
+  }
+  
+  .courses-info__item {
+    box-sizing: border-box;
+    font-family: $main-font;
+    font-size: $title-h4-font-size;
+    font-weight: 900;
+    line-height: calculateRem(18px);
+    text-transform: uppercase;
+    white-space: nowrap;
+  
+    &--left {
+      color: $title-light-color;
+      background-color: $title-dark-color;
+    }
+    &--middle-right {
+      display: inline-block;
+      transform: translateY(50%);
+    }
+  }
+  
+  .courses-info__item--crossed-out {
+    display: block;
+    position: relative;
+  
+    &::after {
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      content: "";
+      display: block;
+      width: calculateRem(64px);
+      height: calculateRem(20px);
+      background-image: url(../../img/stick1.png);
+    }
+  }
+  
+  .courses-info__bonus {
+    box-sizing: border-box;
+    padding-right: calculateRem(15px);
+    font-family: $main-font;
+    font-size: calculateRem(14px);
+    line-height: calculateRem(21px);
+    font-weight: 500;
+    color: $mark-color;
+  
+    @include mobile {
+      padding-right: calculateRem(25px);
+    }
+  
+    &::before {
+      content: "";
+      float: left;
+      margin-right: calculateRem(18px);
+      margin-left: calculateRem(30px);
+      width: calculateRem(20px);
+      height: 100%;
+      background-image: url(../../img/stick2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  .courses-button {
+    display: block;
+    margin: auto;
+    min-width: 336px;
+    height: 48px;
+    font-family: $main-font;
+    font-size: calculateRem(14px);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $title-light-color;
+    background-color: $mark-color;
+    border: none;
+    box-shadow: -3px 3px 42px -15px rgba(0, 0, 0, 0.75);
+  
+    @include mobile {
+      min-width: 310px;
+      max-width: 90%;
+    }
+  }
+  
