@@ -46,6 +46,7 @@
 
   @include mobile{
     flex-direction: column;
+    // display: block;
     align-items: center;
   }
 }
@@ -112,7 +113,7 @@
 .course-keypoints{
   width: 50%;
   min-width: 300px;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 .course-keypoints__item{
@@ -156,6 +157,7 @@
   margin-bottom: 100px;
   @include mobile{
     flex-direction: column;
+    // display: block
   }
 }
 

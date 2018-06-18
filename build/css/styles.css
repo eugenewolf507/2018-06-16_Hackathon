@@ -571,7 +571,7 @@ body {
 .course-keypoints {
   width: 50%;
   min-width: 300px;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 .course-keypoints__item {
@@ -638,7 +638,6 @@ body {
 
 .course-after {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0 0 55px;
 }
@@ -650,19 +649,19 @@ body {
 
 .course-after__title {
   max-width: 275px;
-  margin: 0 0 30px;
+  margin: 0 0 21px;
 }
 
 .course-after__list {
   padding-left: 70px;
-  padding-right: 30px;
   list-style: none;
-  max-width: 290px;
+  max-width: 310px;
 }
 
 .course-after__item {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  width: 100%;
 }
 
 .course-after__item:last-child {
@@ -670,7 +669,7 @@ body {
 }
 
 .course-after__item:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -24px;
   top: 6px;
@@ -695,7 +694,7 @@ body {
 
 .course-require__title {
   max-width: 480px;
-  margin: 0 0 45px;
+  margin: 0 0 36px;
 }
 
 .course-require__content {
@@ -705,6 +704,7 @@ body {
 
 .course-require__thumb {
   flex-shrink: 0;
+  margin-right: 95px;
 }
 
 .course-require__list {
@@ -714,14 +714,14 @@ body {
 }
 
 .course-require__item {
-  max-width: 160px;
+  max-width: 134px;
   margin: 0;
-  margin-left: 60px;
+  padding: 0;
+  margin-left: 30px;
   counter-increment: count-item;
   position: relative;
   line-height: 25px;
-  font-size: 1.125rem;
-  width: 100%;
+  font-size: 17px;
 }
 
 .course-require__item:first-child {
@@ -756,7 +756,7 @@ body {
 }
 
 .article-title {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 .program-item {
@@ -795,7 +795,7 @@ body {
 
 .program-item__inner {
   padding-left: 26%;
-  padding-bottom: 1.6875rem;
+  padding-bottom: 1.5625rem;
 }
 
 .program-item__pretitle {
@@ -1055,6 +1055,11 @@ body {
   box-shadow: -3px 3px 42px -15px rgba(0, 0, 0, 0.75);
 }
 
+.courses-button:hover {
+  cursor: pointer;
+  background-color: #eb621e;
+}
+
 @media (max-width: 1199px) {
   body {
     padding: 0 10px;
@@ -1085,6 +1090,7 @@ body {
     font-size: 1rem;
     max-width: 100%;
     margin-left: 65px;
+    flex-direction: column;
   }
 
   .course-require__item:first-child {
@@ -1215,15 +1221,21 @@ body {
 
   .course-require__content {
     margin: 0 auto;
+    align-items: center;
   }
 
   .course-require__thumb {
     display: none;
   }
 
+  .course-require__list {
+    flex-direction: column;
+  }
+
   .course-require__item {
     font-size: 0.875rem;
     margin-bottom: 20px;
+    max-width: 100%;
   }
 
   .article-title {
@@ -1252,7 +1264,7 @@ body {
   }
 
   .courses-button {
-    min-width: 310px;
+    min-width: 290px;
     max-width: 90%;
   }
 }

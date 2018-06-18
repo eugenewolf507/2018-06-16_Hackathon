@@ -1,15 +1,19 @@
 .course-after {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   margin: 0 0 55px;
+  // outline: 1px solid red;
 
   @include tablet {
-    margin: 0 0 55px;    
+    margin: 0 0 55px;
+    // display: block;
+
   }
 
   @include mobile {
-    flex-direction: column;       
+    flex-direction: column;
+    // display: block;
   }
 
   &__text {
@@ -19,17 +23,17 @@
     @include mobile {
       font-size: 0.875rem;
       line-height: 20px;
-    } 
+    }
   }
 
   &__title {
     @extend %section-title;
     max-width: 275px;
-    margin: 0 0 30px;
+    margin: 0 0 21px;
 
     @include mobile {
       margin-bottom: 20px;
-      text-align: center;       
+      text-align: center;
     }
 
     &--highlighted {
@@ -39,34 +43,37 @@
 
   &__list {
     padding-left: 70px;
-    padding-right: 30px;
     list-style: none;
-    max-width: 290px;
+    max-width: 310px;
+    // outline: 1px solid green;
 
     @include tablet {
       padding-left: 50px;
-      padding-right: 0;    
+      padding-right: 0;
     }
 
     @include mobile {
       padding-left: 20px;
-    }     
+    }
   }
 
   &__item {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    width: 100%;
+
+    // outline: 1px solid purple;
 
     @include mobile {
-      margin: 0 0 5px; 
-    } 
+      margin: 0 0 5px;
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: -24px;
       top: 6px;
@@ -77,7 +84,7 @@
   }
 
   &__thumb {
-    width: 50%;  
+    width: 50%;
     @include mobile {
       width: 100%;
     }
@@ -86,6 +93,7 @@
   &__img {
     @extend %image;
     margin: 0 auto;
+    // outline: 1px solid palevioletred;
   }
 }
 
@@ -93,36 +101,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  // outline: 1px solid red;
 
   &__title {
     max-width: 480px;
-    margin: 0 0 45px;
+    margin: 0 0 36px;
     @extend %section-title;
     @include tablet {
-      margin: 0 0 35px;   
+      margin: 0 0 35px;
     }
     @include mobile {
       margin: 10px auto 25px;
-      text-align: center;   
+      text-align: center;
     }
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
+    // outline: 1px solid blue;
+
+
     @include tablet {
       justify-content: center;
     }
+
     @include mobile {
-      margin: 0 auto;     
+      margin: 0 auto;
+      align-items: center;
     }
   }
 
   &__thumb {
     flex-shrink: 0;
+    margin-right: 95px;
 
     @include mobile {
-      display: none;       
+      display: none;
     }
   }
 
@@ -134,24 +149,34 @@
     display: flex;
     flex-wrap: wrap;
     counter-reset: count-item headline;
+    // outline: 1px solid yellow;
+    @include mobile {
+      flex-direction: column;
+    }
+
   }
 
   &__item {
-    max-width: 160px;
+    max-width: 134px;
     margin: 0;
-    margin-left: 60px;
+    padding: 0;
+    margin-left: 30px;
     counter-increment: count-item;
     position: relative;
     line-height: 25px;
-    font-size: 1.125rem;
-    width: 100%;
+    // font-size: 1.125rem;
+    font-size: 17px;
+    // width: 100%;
+    // outline: 1px solid brown;
+
     @include tablet {
-      font-size: 1rem;    
-      max-width: 100%;  
+      font-size: 1rem;
+      max-width: 100%;
       margin-left: 65px;
+      flex-direction: column;
 
       &:first-child {
-        max-width: 100%;  
+        max-width: 100%;
       }
 
       &:before {
@@ -164,14 +189,16 @@
     @include mobile {
       font-size: 0.875rem;
       margin-bottom: 20px;
-    } 
+      max-width: 100%;
+      
+    }
 
     &:first-child {
       max-width: 215px;
     }
 
     &:before {
-      content: '[ 00' counter(count-item) ' ]';
+      content: "[ 00" counter(count-item) " ]";
       display: inline-block;
       position: absolute;
       font-size: 0.75rem;

@@ -17,7 +17,7 @@
 .article-title {
   @extend %article-title;
   //display: inline-block;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 
   @include mobile{
     text-align: center;
@@ -81,7 +81,7 @@
 
   &__inner {  //inner for program-item__pretitle, title, text
     padding-left: 26%;
-    padding-bottom: calculateRem(27px);
+    padding-bottom: calculateRem(25px);
     // outline: 1px solid rgba(224, 63, 144, 0.2);
   }
 

@@ -132,9 +132,14 @@
     background-color: $mark-color;
     border: none;
     box-shadow: -3px 3px 42px -15px rgba(0, 0, 0, 0.75);
-  
+     
+  &:hover {
+    cursor: pointer;
+    background-color: #eb621e;
+  }
+
     @include mobile {
-      min-width: 310px;
+      min-width: 290px;
       max-width: 90%;
     }
   }
