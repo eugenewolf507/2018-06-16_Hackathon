@@ -169,9 +169,12 @@
 .course-description__image-container{
   margin-right: 2%;
   flex-basis: 49%;
+
   @include mobile{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 0;
   }
 }
 

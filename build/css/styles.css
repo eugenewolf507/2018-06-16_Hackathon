@@ -1055,8 +1055,8 @@ body {
   }
 
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg);
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg);
   }
 
   88.8% {
@@ -1097,8 +1097,8 @@ body {
   }
 
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg);
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg);
   }
 
   88.8% {
@@ -4563,6 +4563,8 @@ body {
   .course-description__image-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 0;
   }
 
   .course-description__description-container {
