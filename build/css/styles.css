@@ -1264,6 +1264,7 @@ body {
   }
 
   .courses-button {
+    min-width: 290px;
     max-width: 90%;
   }
 }

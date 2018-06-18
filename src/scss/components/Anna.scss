@@ -10,7 +10,6 @@
   padding: 2.94rem 2.81rem 3.56rem;
   box-sizing: border-box;
   box-shadow: -3px 3px 42px -15px rgba(0, 0, 0, 0.75);
-
   @include mobile {
     padding: 2.94rem 0.8rem 3.56rem;
   }
@@ -140,6 +139,7 @@
   }
 
   @include mobile {
+    min-width: 290px;
     max-width: 90%;
   }
 }
