@@ -501,6 +501,8 @@ body {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  -webkit-writing-mode: tb-rl;
+  writing-mode: tb-rl;
   white-space: nowrap;
   z-index: -1;
 }
@@ -950,10 +952,6 @@ body {
     width: 100%;
   }
 
-  .bg-text {
-    display: none;
-  }
-
   .course-after {
     margin: 0 0 55px;
   }
@@ -1024,10 +1022,6 @@ body {
 
   .wrapper {
     min-width: 290px;
-  }
-
-  .bg-text {
-    display: none;
   }
 
   .header {

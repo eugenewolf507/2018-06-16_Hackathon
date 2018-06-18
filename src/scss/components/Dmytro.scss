@@ -9,6 +9,7 @@
   color: #f2f2f2;
   text-transform: uppercase;
   writing-mode: vertical-rl;
+  writing-mode: tb-rl;
   white-space: nowrap;
   z-index: -1;
 
@@ -24,11 +25,11 @@
   }
 
   @include mobile{
-    display: none;
+    // display: none;
   }
 
   @include tablet{
-    display: none;
+    // display: none;
   }
 }
 
