@@ -482,6 +482,7 @@ body {
   max-width: 848px;
   margin: 0 auto;
   padding-top: 32px;
+  padding-bottom: 40px;
 }
 
 /*!
@@ -4429,7 +4430,6 @@ body {
 .courses-button {
   display: block;
   margin: auto;
-  margin-bottom: 40px;
   min-width: 336px;
   height: 48px;
   font-family: Acrom, sans-serif;
