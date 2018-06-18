@@ -1021,6 +1021,10 @@ body {
     min-width: 290px;
   }
 
+  .bg-text {
+    display: none;
+  }
+
   .header {
     flex-direction: column;
     align-items: center;
