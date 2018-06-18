@@ -15,6 +15,7 @@
   &__item {
     font-size: $text-font-size;
     font-family: $section-font;
+    line-height: 20.83px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -30,15 +31,6 @@
     border-left: 4px solid #ff5600;
     position: relative;
 
-    &:nth-child(3n) {
-      margin-right: 0px;
-    }
-
-    &:last-child {
-      margin-right: 0px;
-      margin-bottom: 0px;
-    }
-
     &:after {
       content: "";
       width: 88px;
@@ -46,6 +38,38 @@
       position: absolute;
       background-repeat: no-repeat;
       left: 102%;
+    }
+
+    &--first{
+      order: 8;
+    }
+    
+    &--second {
+      order: 9;
+    }
+    
+    &--third {
+      order: 10;
+      margin-right: 0px;
+    }
+    
+    &--fourth {
+      order: 13;
+      margin-right: 0px;
+    }
+    
+    &--fifth {
+      order: 12;
+    }
+    
+    &--sixth {
+      order: 11;
+    }
+    
+    &--seventh {
+      order: 14;
+      margin-right: 0px;
+      margin-bottom: 0px;
     }
 
     &--first:after,
@@ -62,21 +86,29 @@
     }
 
     &--fourth:after {
-      background-image: url(../img/vector-3.png);
-      width: 204px;
-      height: 83px;
-      left: 50%;
-      top: 104%;
-    }
-
-    &--fifth:after,
-    &--sixth:after {
       background-image: url(../img/vector-1.png);
       width: 88px;
       height: 7px;
       transform: rotateY(180deg);
       left: -45%;
       top: 50%;
+    }
+
+    &--fifth:after {
+      background-image: url(../img/vector-1.png);
+      width: 88px;
+      height: 7px;
+      transform: rotateY(180deg);
+      left: -45%;
+      top: 50%;
+    }
+
+    &--sixth:after {
+      background-image: url(../img/vector-3.png);
+      width: 204px;
+      height: 83px;
+      left: 50%;
+      top: 104%;
     }
   }
 }
@@ -90,8 +122,32 @@
   .usages__item {
     margin-right: 0px;
 
-    &:nth-child(odd) {
+    &--first{
+      order: 8;
       margin-right: 100px;
+    }
+    
+    &--second {
+      order: 9;
+    }
+    
+    &--third {
+      order: 11;
+      margin-right: 0px;
+    }
+    
+    &--fourth {
+      order: 10;
+      margin-right: 100px;
+    }
+    
+    &--fifth {
+      order: 12;
+      margin-right: 100px;
+    }
+    
+    &--sixth {
+      order: 13;
     }
 
     &:last-child {
@@ -106,14 +162,23 @@
       left: 50%;
       top: 104%;
     }
-  
-    &--fourth:after {
+
+    &--third:after {
       background-image: url(../img/vector-1.png);
       transform: rotateY(180deg);
       width: 204px;
       height: 83px;
       left: -100%;
       top: 50%;
+    }
+  
+    &--fourth:after {
+      background-image: url(../img/vector-2.png);
+      transform: rotateY(180deg);
+      width: 7px;
+      height: 32px;
+      left: 50%;
+      top: 104%;
     }
   
     &--fifth:after {
@@ -126,7 +191,7 @@
       width: 204px;
       height: 83px;
       top: 104%;
-      left: -75%;
+      left: 15%;
     }
   }
 }
@@ -147,6 +212,14 @@
       height: 32px;
       top: 104%;
       left: 50%;
+    }
+
+    &--fourth {
+      order: 12;
+    }
+
+    &--sixth {
+      order: 13;
     }
 
     &--seventh::after {
