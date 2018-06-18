@@ -856,6 +856,7 @@ body {
   text-align: center;
   border-left: 4px solid #ff5600;
   position: relative;
+  background-color: #fff;
 }
 
 .usages__item:after {
