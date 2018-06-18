@@ -645,20 +645,20 @@ body {
 }
 
 .course-after__text {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 25px;
 }
 
 .course-after__title {
   max-width: 275px;
-  margin: 0 0 35px;
+  margin: 0 0 30px;
 }
 
 .course-after__list {
   padding-left: 70px;
   padding-right: 30px;
   list-style: none;
-  max-width: 270px;
+  max-width: 290px;
 }
 
 .course-after__item {
@@ -917,6 +917,10 @@ body {
     width: 100%;
   }
 
+  .bg-text {
+    display: none;
+  }
+
   .course-after {
     margin: 0 0 55px;
   }
@@ -987,6 +991,10 @@ body {
 
   .wrapper {
     min-width: 290px;
+  }
+
+  .bg-text {
+    display: none;
   }
 
   .header {
