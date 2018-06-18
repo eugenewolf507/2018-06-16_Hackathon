@@ -21,7 +21,7 @@
 
   &:nth-child(2){
     top: 1895px;
-    right: 0px;
+    right: 10px;
     letter-spacing: -0.08em;
   }
 
@@ -45,9 +45,9 @@
   margin: 0 0 83px 0;
 
   @include mobile{
-    flex-direction: column;
-    // display: block;
-    align-items: center;
+    //flex-direction: column;
+    //align-items: center;
+    display: block;
   }
 }
 
@@ -55,7 +55,7 @@
   @extend %image;
 
   @include mobile{
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
   }
 }
 
@@ -66,6 +66,10 @@
   font-size: 11px;
   font-weight: 500;
   line-height: 14px;
+
+  @include mobile{
+    justify-content: center;
+  }
 }
 
 .header__email{
@@ -156,8 +160,8 @@
   align-items: flex-start;
   margin-bottom: 100px;
   @include mobile{
-    flex-direction: column;
-    // display: block
+    //flex-direction: column;
+    display: block;
   }
 }
 
@@ -166,7 +170,8 @@
   margin-right: 2%;
   flex-basis: 49%;
   @include mobile{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
