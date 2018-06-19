@@ -72,7 +72,8 @@
 
   &--middle-right {
     display: inline-block;
-    transform: translateY(50%);
+    padding-top: 20px;
+    box-sizing: border-box;
   }
 }
   
@@ -84,11 +85,12 @@
     position: absolute;
     bottom: 50%;
     transform: translateY(50%);
+    transform: rotateZ(-15deg);
     content: "";
     display: block;
-    width: calculateRem(64px);
-    height: calculateRem(20px);
-    background-image: url(../img/stick1.png);
+    width: 63px;
+    height: 4px;
+    background-color: $mark-color;
   }
 }
   
@@ -110,11 +112,11 @@
     float: left;
     margin-right: calculateRem(18px);
     margin-left: calculateRem(30px);
-    width: calculateRem(20px);
-    height: 100%;
-    background-image: url(../img/stick2.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-top: calculateRem(5px);
+    width: 4px;
+    height: 30px;
+    background-color: $title-dark-color;
+    transform: rotateZ(30deg);
   }
 }
 
