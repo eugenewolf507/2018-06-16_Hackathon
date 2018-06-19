@@ -19,14 +19,13 @@
   //display: inline-block;
   margin-bottom: 56px;
 
-  @include mobile{
+  @include mobile {
     text-align: center;
   }
-  
+
   &--invert-color {
     @extend %inverted-colors;
   }
-  
 }
 
 .program-item {
@@ -42,7 +41,7 @@
       &:nth-of-type(even) {
         padding-right: 0;
       }
-      
+
       &:nth-of-type(3n) {
         padding-right: 2%;
       }
@@ -54,8 +53,8 @@
   }
   display: flex;
   counter-increment: count-box; //Counter
-  
-  &__number {    
+
+  &__number {
     // background-color: rgba(59, 238, 149, 0.2);
     font-weight: 900;
     position: relative;
@@ -64,7 +63,7 @@
     &::before {
       position: absolute;
       left: -15px;
-      content: "0"counter(count-box)"."; //Counter
+      content: "0" counter(count-box) "."; //Counter
       font-size: $title-h3-font-size;
     }
 
@@ -79,7 +78,8 @@
     }
   }
 
-  &__inner {  //inner for program-item__pretitle, title, text
+  &__inner {
+    //inner for program-item__pretitle, title, text
     padding-left: 26%;
     padding-bottom: calculateRem(25px);
     // outline: 1px solid rgba(224, 63, 144, 0.2);
@@ -92,7 +92,7 @@
     font-weight: 900;
 
     &::before {
-      content: "блок "counter(count-box)"."; //Counter
+      content: "блок " counter(count-box) "."; //Counter
       @extend %inverted-colors;
     }
   }
@@ -106,10 +106,9 @@
     font-weight: 900;
     line-height: calculateRem(20px);
   }
-  
+
   &__text {
     font-size: $title-h4-font-size;
     font-weight: 400;
   }
-
 }

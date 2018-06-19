@@ -35,27 +35,27 @@
       width: 60%;
     }
   }
-  
+
   &:nth-child(2) {
     @include mobile {
       width: 40%;
     }
   }
 }
-  
+
 .item-wrapper {
   margin-bottom: calculateRem(18px);
-  
+
   &:last-of-type {
     margin-bottom: 0;
   }
-  
+
   &--left {
     text-align: right;
     padding-right: 2px;
   }
 }
-  
+
 .courses-info__item {
   box-sizing: border-box;
   font-family: $main-font;
@@ -64,7 +64,7 @@
   line-height: calculateRem(18px);
   text-transform: uppercase;
   white-space: nowrap;
-  
+
   &--left {
     color: $title-light-color;
     background-color: $title-dark-color;
@@ -76,11 +76,11 @@
     box-sizing: border-box;
   }
 }
-  
+
 .courses-info__item--crossed-out {
   display: block;
   position: relative;
-  
+
   &::after {
     position: absolute;
     bottom: 50%;
@@ -93,7 +93,7 @@
     background-color: $mark-color;
   }
 }
-  
+
 .courses-info__bonus {
   box-sizing: border-box;
   padding-right: calculateRem(15px);

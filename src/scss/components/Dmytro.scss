@@ -1,8 +1,8 @@
-.bg-text{
+.bg-text {
   position: absolute;
   margin: 0;
   padding: 0;
-  font-family: 'Acrom';
+  font-family: "Acrom";
   font-weight: 900;
   font-size: 182px;
   width: 180px;
@@ -14,57 +14,58 @@
   z-index: -1;
   transform: rotate(90deg);
 
-  &:nth-child(1){
+  &:nth-child(1) {
     top: 576px;
     right: 205px;
   }
 
-  &:nth-child(2){
+  &:nth-child(2) {
     top: 1895px;
     right: 10px;
     letter-spacing: -0.08em;
   }
 
-  @include mobile{
+  @include mobile {
     display: none;
   }
 
-  @include tablet{
+  @include tablet {
     // display: none;
   }
 }
 
-.course{
+.course {
   margin-bottom: 140px;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 0 83px 0;
 
-  &__phone, &__email{
+  &__phone,
+  &__email {
     text-decoration: none;
     color: #000;
   }
 
-  @include mobile{
+  @include mobile {
     //flex-direction: column;
     //align-items: center;
     display: block;
   }
 }
 
-.header__logo{
+.header__logo {
   @extend %image;
 
-  @include mobile{
+  @include mobile {
     margin: 0 auto 15px;
   }
 }
 
-.header__contacts{
+.header__contacts {
   display: flex;
   align-items: center;
   font-family: $main-font;
@@ -72,19 +73,19 @@
   font-weight: 500;
   line-height: 14px;
 
-  @include mobile{
+  @include mobile {
     justify-content: center;
   }
 }
 
-.header__email{
+.header__email {
   margin-right: 15px;
   line-height: 17px;
   display: flex;
   align-items: center;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     display: inline-block;
     background-image: url(../img/envelope.svg);
     width: 17px;
@@ -93,12 +94,12 @@
   }
 }
 
-.header__phone{
+.header__phone {
   display: flex;
   align-items: center;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     display: inline-block;
     background-image: url(../img/phone.svg);
     width: 12px;
@@ -106,26 +107,26 @@
   }
 }
 
-.course-title{
+.course-title {
   @extend %article-title;
   margin-bottom: 58px;
-  
-  @include mobile{
+
+  @include mobile {
     text-align: center;
   }
 }
 
-.course-title--inverted{
+.course-title--inverted {
   @extend %inverted-colors;
 }
 
-.course-keypoints{
+.course-keypoints {
   width: 50%;
   min-width: 300px;
   margin-bottom: 54px;
 }
 
-.course-keypoints__item{
+.course-keypoints__item {
   padding-left: 100px;
   position: relative;
   font-family: $main-font;
@@ -134,12 +135,12 @@
   line-height: 27px;
   color: $title-dark-color;
 
-  @include mobile{
+  @include mobile {
     padding-left: 60px;
   }
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 6px;
     left: 0px;
@@ -149,33 +150,32 @@
     width: 56px;
     height: 8px;
 
-    @include mobile{
+    @include mobile {
       width: 40px;
     }
   }
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 22px;
   }
 }
 
-.course-description{
+.course-description {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 100px;
-  @include mobile{
+  @include mobile {
     //flex-direction: column;
     display: block;
   }
 }
 
-
-.course-description__image-container{
+.course-description__image-container {
   margin-right: 2%;
   flex-basis: 49%;
 
-  @include mobile{
+  @include mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,26 +183,25 @@
   }
 }
 
-.course-description__image{
+.course-description__image {
   @extend %image;
 }
 
-.course-description__description-container
-{
+.course-description__description-container {
   flex-basis: 49%;
-  @include mobile{
+  @include mobile {
     text-align: center;
   }
 }
 
-.course-description__description-title{
+.course-description__description-title {
   @extend %section-title;
   margin-bottom: 36px;
   position: relative;
   padding-top: 32px;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0px;
     left: 0px;
@@ -210,18 +209,18 @@
     background-color: $title-dark-color;
     width: 16px;
     height: 16px;
-    @include mobile{
+    @include mobile {
       display: none;
     }
   }
 
-  @include mobile{
+  @include mobile {
     padding-top: 18px;
     margin-bottom: 20px;
   }
 }
 
-.course-description__description-text{
+.course-description__description-text {
   //font-family: $main-font;
   //font-size: 17px;
   //font-weight: 400;

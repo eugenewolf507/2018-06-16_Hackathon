@@ -8,7 +8,6 @@
   @include tablet {
     margin: 0 0 55px;
     // display: block;
-
   }
 
   @include mobile {
@@ -123,7 +122,6 @@
     justify-content: space-between;
     // outline: 1px solid blue;
 
-
     @include tablet {
       justify-content: center;
     }
@@ -155,7 +153,6 @@
     @include mobile {
       flex-direction: column;
     }
-
   }
 
   &__item {
@@ -192,7 +189,6 @@
       font-size: 0.875rem;
       margin-bottom: 20px;
       max-width: 100%;
-      
     }
 
     &:first-child {

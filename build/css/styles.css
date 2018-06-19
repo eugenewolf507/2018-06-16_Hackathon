@@ -1056,8 +1056,8 @@ body {
   }
 
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg);
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg);
   }
 
   88.8% {
@@ -1098,8 +1098,8 @@ body {
   }
 
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg);
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg);
   }
 
   88.8% {
@@ -3886,7 +3886,7 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  font-family: 'Acrom';
+  font-family: "Acrom";
   font-weight: 900;
   font-size: 182px;
   width: 180px;
@@ -3943,7 +3943,7 @@ body {
 }
 
 .header__email::before {
-  content: '';
+  content: "";
   display: inline-block;
   background-image: url(../img/envelope.svg);
   width: 17px;
@@ -3957,7 +3957,7 @@ body {
 }
 
 .header__phone::before {
-  content: '';
+  content: "";
   display: inline-block;
   background-image: url(../img/phone.svg);
   width: 12px;
@@ -3985,7 +3985,7 @@ body {
 }
 
 .course-keypoints__item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 6px;
   left: 0px;
@@ -4022,7 +4022,7 @@ body {
 }
 
 .course-description__description-title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4307,16 +4307,7 @@ body {
   top: 104%;
 }
 
-.usages__item--fourth:after {
-  background-image: url(../img/vector-1.png);
-  width: 88px;
-  height: 7px;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  left: -45%;
-  top: 50%;
-}
-
+.usages__item--fourth:after,
 .usages__item--fifth:after {
   background-image: url(../img/vector-1.png);
   width: 88px;
@@ -4714,7 +4705,8 @@ body {
     margin-right: 0px;
   }
 
-  .usages__item--second:after {
+  .usages__item--second:after,
+  .usages__item--fourth:after {
     background-image: url(../img/vector-2.png);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -4732,16 +4724,6 @@ body {
     height: 83px;
     left: -100%;
     top: 50%;
-  }
-
-  .usages__item--fourth:after {
-    background-image: url(../img/vector-2.png);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    width: 7px;
-    height: 32px;
-    left: 50%;
-    top: 104%;
   }
 
   .usages__item--fifth:after {

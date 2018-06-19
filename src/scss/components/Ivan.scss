@@ -41,32 +41,32 @@
       left: 102%;
     }
 
-    &--first{
+    &--first {
       order: 8;
     }
-    
+
     &--second {
       order: 9;
     }
-    
+
     &--third {
       order: 10;
       margin-right: 0px;
     }
-    
+
     &--fourth {
       order: 13;
       margin-right: 0px;
     }
-    
+
     &--fifth {
       order: 12;
     }
-    
+
     &--sixth {
       order: 11;
     }
-    
+
     &--seventh {
       order: 14;
       margin-right: 0px;
@@ -86,16 +86,7 @@
       top: 104%;
     }
 
-    &--fourth:after {
-      background-image: url(../img/vector-1.png);
-      width: 88px;
-      height: 7px;
-      transform: rotateY(180deg);
-      left: -45%;
-      top: 50%;
-    }
-
-    &--fifth:after {
+    &--fourth:after, &--fifth:after {
       background-image: url(../img/vector-1.png);
       width: 88px;
       height: 7px;
@@ -123,30 +114,30 @@
   .usages__item {
     margin-right: 0px;
 
-    &--first{
+    &--first {
       order: 8;
       margin-right: 100px;
     }
-    
+
     &--second {
       order: 9;
     }
-    
+
     &--third {
       order: 11;
       margin-right: 0px;
     }
-    
+
     &--fourth {
       order: 10;
       margin-right: 100px;
     }
-    
+
     &--fifth {
       order: 12;
       margin-right: 100px;
     }
-    
+
     &--sixth {
       order: 13;
     }
@@ -155,7 +146,7 @@
       margin-right: 0px;
     }
 
-    &--second:after {
+    &--second:after, &--fourth:after {
       background-image: url(../img/vector-2.png);
       transform: rotateY(180deg);
       width: 7px;
@@ -172,21 +163,13 @@
       left: -100%;
       top: 50%;
     }
-  
-    &--fourth:after {
-      background-image: url(../img/vector-2.png);
-      transform: rotateY(180deg);
-      width: 7px;
-      height: 32px;
-      left: 50%;
-      top: 104%;
-    }
-  
+
+
     &--fifth:after {
       transform: rotateY(0deg);
       left: 102%;
     }
-  
+
     &--sixth:after {
       background-image: url(../img/vector-2.png);
       width: 204px;
