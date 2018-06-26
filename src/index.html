@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+    <div class="pug"><img src="../img/pug.png" alt=""></div>
   <!-- Dmytro -->
   <div class="wrapper">
     <div class="bg-text">Go IT</div>
@@ -252,8 +252,14 @@
       <!-- Anna -->
     </article>
   </div>
+ 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).mousemove(function(e){
+    $('.pug').css({left:e.pageX, top:e.pageY});
+    })
+  </script>
   <script>
     $(window).scroll(function () {
       $('.mov').each(function () {

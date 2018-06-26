@@ -4326,6 +4326,18 @@ body {
   top: 104%;
 }
 
+.pug {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  transition: 0.1s;
+}
+
 .courses-info {
   margin: auto;
   margin-bottom: 3.4375rem;
