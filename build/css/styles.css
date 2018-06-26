@@ -4336,6 +4336,10 @@ body {
   height: 40px;
   pointer-events: none;
   transition: 0.1s;
+  background-image: url("../img/pug.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .courses-info {
