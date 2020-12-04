@@ -1,1 +1,1 @@
-<a href="https://dmytroie.github.io/2016-06-16_Hackathon/build/" target="_blank">https://dmytroie.github.io/2016-06-16_Hackathon/build/</a><br>
+<a href="view this landing page on GithubPages" target="_blank">https://eugenewolf507.github.io/2018-06-16_Hackathon/build/</a><br>
